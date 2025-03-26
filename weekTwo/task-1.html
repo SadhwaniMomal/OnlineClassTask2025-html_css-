@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Student Information Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2 class="mb-4">Student Information Form</h2>
+      <form action="#" method="post">
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" id="phone" name="phone" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Gender</label><br />
+          <div class="form-check form-check-inline">
+            <input
+              type="radio"
+              id="male"
+              name="gender"
+              value="Male"
+              class="form-check-input"
+              required
+            />
+            <label for="male" class="form-check-label">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="Female"
+              class="form-check-input"
+              required
+            />
+            <label for="female" class="form-check-label">Female</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              type="radio"
+              id="other"
+              name="gender"
+              value="Other"
+              class="form-check-input"
+              required
+            />
+            <label for="other" class="form-check-label">Other</label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="country" class="form-label">Country</label>
+          <select id="country" name="country" class="form-select" required>
+            <option value="">Select a country</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            <option value="India">India</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            class="form-control"
+            rows="4"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+      </form>
+    </div>
+  </body>
+</html>
